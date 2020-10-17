@@ -44,10 +44,16 @@ purpleBtn.addEventListener("click", purpleFunction);
 
 let textBox = document.getElementById("text");
 
-textBox.addEventListener("change", changeText);
+textBox.addEventListener("input", changeText);
 
 function changeText() {
    
     let boardtext = document.getElementById("boardText");
     boardtext.textContent = textBox.value;
 }
+
+
+let name = prompt("your name please");
+
+document.getElementById("name").textContent = name;
+
